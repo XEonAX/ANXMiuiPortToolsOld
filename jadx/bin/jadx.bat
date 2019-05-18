@@ -63,7 +63,7 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\jadx-cli-0.8.0-b570-1fc92d2.jar;%APP_HOME%\lib\jadx-core-0.8.0-b570-1fc92d2.jar;%APP_HOME%\lib\dx-1.16.jar;%APP_HOME%\lib\android-5.1.jar;%APP_HOME%\lib\logback-classic-1.2.3.jar;%APP_HOME%\lib\slf4j-api-1.7.25.jar;%APP_HOME%\lib\jcommander-1.74.jar;%APP_HOME%\lib\commons-io-2.6.jar;%APP_HOME%\lib\asm-6.2.jar;%APP_HOME%\lib\annotations-16.0.2.jar;%APP_HOME%\lib\cloning-1.9.10.jar;%APP_HOME%\lib\logback-core-1.2.3.jar;%APP_HOME%\lib\objenesis-2.6.jar
+set CLASSPATH=%APP_HOME%\lib\jadx-cli-0.9.0-b1056-75a67140.jar;%APP_HOME%\lib\jadx-core-0.9.0-b1056-75a67140.jar;%APP_HOME%\lib\dx-1.16.jar;%APP_HOME%\lib\android-5.1.jar;%APP_HOME%\lib\logback-classic-1.2.3.jar;%APP_HOME%\lib\slf4j-api-1.7.26.jar;%APP_HOME%\lib\baksmali-2.2.7.jar;%APP_HOME%\lib\smali-2.2.7.jar;%APP_HOME%\lib\util-2.2.7.jar;%APP_HOME%\lib\jcommander-1.74.jar;%APP_HOME%\lib\asm-7.1.jar;%APP_HOME%\lib\annotations-17.0.0.jar;%APP_HOME%\lib\cloning-1.9.12.jar;%APP_HOME%\lib\dexlib2-2.2.7.jar;%APP_HOME%\lib\guava-27.1-jre.jar;%APP_HOME%\lib\logback-core-1.2.3.jar;%APP_HOME%\lib\objenesis-3.0.1.jar;%APP_HOME%\lib\antlr-runtime-3.5.2.jar;%APP_HOME%\lib\stringtemplate-3.2.1.jar;%APP_HOME%\lib\failureaccess-1.0.1.jar;%APP_HOME%\lib\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;%APP_HOME%\lib\jsr305-3.0.2.jar;%APP_HOME%\lib\checker-qual-2.5.2.jar;%APP_HOME%\lib\error_prone_annotations-2.2.0.jar;%APP_HOME%\lib\j2objc-annotations-1.1.jar;%APP_HOME%\lib\animal-sniffer-annotations-1.17.jar;%APP_HOME%\lib\antlr-2.7.7.jar
 
 @rem Execute jadx
 "%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %JADX_OPTS%  -classpath "%CLASSPATH%" jadx.cli.JadxCLI %CMD_LINE_ARGS%
